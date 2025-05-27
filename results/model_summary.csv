@@ -1,0 +1,12 @@
+Model,Accuracy,Precision,Recall,F1-Score
+ExtraTrees,0.974,0.97,0.98,0.975
+RandomForest,0.9675,0.96,0.97,0.965
+XGBoost,0.9535,0.95,0.95,0.95
+LogisticRegression,0.9405,0.94,0.94,0.94
+DecisionTree,0.912,0.91,0.91,0.91
+AdaBoost,0.8945,0.89,0.89,0.89
+GradientBoosting,0.948,0.94,0.95,0.945
+SVM,0.9165,0.91,0.91,0.91
+KNN,0.702,0.69,0.71,0.7
+Bagging,0.927,0.92,0.93,0.925
+XETStack,0.9859,0.98,0.99,0.985
