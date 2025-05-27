@@ -3,9 +3,11 @@
 This project aims to build a robust, ML-based detection system for identifying False Data Injection Attacks (FDIAs) in smart grid infrastructures. Using a custom stacked ensemble model (XETStack), it leverages the strengths of Extra Trees and XGBoost classifiers for enhanced cyber-attack detection.
 
 📌 Problem Statement
+
 False Data Injection Attacks are stealthy and dangerous cyber threats targeting smart grids. They manipulate sensor data to mislead control centers, potentially causing widespread disruption. Traditional models lack accuracy and robustness in detecting such threats.
 
 🎯 Objectives
+
 ✅ Detect FDIAs using supervised ML techniques.
 
 ✅ Address class imbalance using SMOTE.
@@ -15,6 +17,7 @@ False Data Injection Attacks are stealthy and dangerous cyber threats targeting 
 ✅ Design a custom stacked ensemble model (XETStack).
 
 🔍 Dataset
+
 Source: Mississippi State University & Oak Ridge National Laboratory
 
 Size: 4966 rows, 129 features
@@ -24,6 +27,7 @@ Features: Voltage, Current, Impedance, Phase Angles, Relay Status, etc.
 Target Classes: Natural (1), Attack (0)
 
 🧠 Machine Learning Models Used
+
 Extra Trees Classifier
 
 Random Forest
@@ -47,6 +51,7 @@ Bagging Classifier
 XETStack (Custom Ensemble: Extra Trees + XGBoost with XGBoost Meta-Learner)
 
 ⚙️ Technologies & Tools
+
 Python 3.8+
 
 Scikit-learn
@@ -60,6 +65,7 @@ SMOTE (imbalanced-learn)
 Pandas, NumPy, Seaborn, Matplotlib
 
 📈 Model Performance
+
 Model	Accuracy
 XETStack	98.59%
 Extra Trees	97.40%
@@ -70,6 +76,7 @@ Others	70–94%
 SMOTE balanced the dataset effectively, improving detection of the minority class (Natural). Optuna helped achieve optimal hyperparameters for ensemble performance.
 
 🧪 Key Features
+
 Data cleaning (handling NaN and inf values)
 
 Class balancing via SMOTE
